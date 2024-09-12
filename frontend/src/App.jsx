@@ -114,8 +114,8 @@ function App() {
 						</RedirectAuthenticatedUser>
 					}
 				/>
-
-				<Route path='*' element={<NotFoundPage />} />
+				{/* catch  */}
+				<Route path='*' element={<Navigate to='/' replace />} />
 			</Routes>
 			<Toaster />
 		</div>
